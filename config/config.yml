@@ -6,13 +6,9 @@ servers:
 registry:
   username: verashkt
   password: <%= ENV["KAMAL_REGISTRY_PASSWORD"] %>
+builder:
+  arch: amd64
 proxy:
   ssl: true
   host: app.example.com
-builder:
-  arch: amd64
-env:
-  secret:
-    - SECRET_KEY_BASE=a8bdd1f1eae19c2346e923190857036d4736d929576ea9fdba549f87f66cdce826a9fcc6f12191e54464773b25349910dfe372c45688541949b22720b87bc101
-
 
